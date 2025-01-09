@@ -1,54 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Weather App</title>
-    <link rel="stylesheet" href="./main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Weather App</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="weather-container">
-        <div class="search">
-            <input type="text" placeholder="Enter your location">
-            <button class="box-search"><img src="images/search.png"></button>
-        </div>
-    
-        <div class="weather-section">
-            <div class="info-weather">
-                <div class="weather">
-                    <img src="images/overcast.png" class="weather-icon">
-                    <p class="temperature"></p>
-                    <p class="description"></p>
-                </div>
-            </div>
-        </div>
-           
-        <div class="details">
-            <div class="column-h">
-                <div class="humidity">
-                    <img src="images/humidity.png" alt="humidity">
-                    <span></span>
-                </div>
-                <p>Humidity</p>
-            </div>
-            
-            <div class="column-w">
-                <div class="wind">
-                    <img src="images/wind.png" alt="wind">
-                    <span></span>
-                </div>
-                <p>Wind Speed</p>
-            <div>
-        </div>
-    </div>
-
-    <div class="not-found">
-        <img src="images/404.png">
-        <p>Uh oh! Location has not been found!</p>
-    </div> 
-
-    <script src="./app.js">
-    </script>
+  <div id="app">
+    <h1>Global Weather App</h1>
+    <input type="text" id="cityInput" placeholder="Enter city" />
+    <input type="text" id="stateInput" placeholder="Enter state (if applicable)" />
+    <input type="text" id="countryInput" placeholder="Enter country" />
+    <button id="getWeather">Get Weather</button>
+    <div id="weatherResult"></div>
+  </div>
+  <script src="script.js"></script>
 </body>
-
 </html>
